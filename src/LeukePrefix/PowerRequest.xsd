@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:tns="http://schemas.hu.fnt.nl/berichten/request"
+  targetNamespace="http://schemas.hu.fnt.nl/berichten/request">
+  <xs:element name="powerrequest" type="tns:request" />
+  <xs:complexType name="request">
+    <xs:all minOccurs="1">
+      <!-- Hier zijn de 3 getallen die worden berekend voor in de "Pie-chart" -->
+      <xs:element name="getal1" type="xs:int" />
+      <xs:element name="getal2" type="xs:int" />
+      <xs:element name="getal3" type="xs:int" />
+	</xs:all>
+  </xs:complexType>
+</xs:schema> 
